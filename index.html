@@ -79,13 +79,13 @@
 
   .hero{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;padding:120px 0 60px}
   .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;width:100%}
-  @media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:8px}.hero{min-height:auto;padding:140px 0 70px}h1.hero-title .accent{white-space:normal}}
+  @media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:8px}.hero{min-height:auto;padding:140px 0 70px}h1.hero-title .accent{white-space:normal}.eyebrow{letter-spacing:.15em;font-size:11px}.hero-sub{font-size:1.1rem}}
   h1.hero-title{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(2.4rem,5vw,4rem);line-height:1.06;letter-spacing:-.018em;margin-bottom:30px}
   h1.hero-title .accent{white-space:nowrap}
   h1.hero-title .accent{color:var(--gold-deep)}
   .hero-sub{font-size:1.26rem;color:var(--ink-soft);max-width:530px;margin-bottom:38px;line-height:1.6}
   .gold-rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);width:100%;max-width:340px;margin:0 0 22px}
-  .domains{display:flex;flex-wrap:nowrap;white-space:nowrap;gap:10px 14px;font:var(--label);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-size:11px}
+  .domains{display:flex;flex-wrap:wrap;gap:10px 14px;font:var(--label);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-size:11px}
   .domains span{display:flex;align-items:center;gap:18px}
   .domains span::after{content:"\00B7";color:var(--gold)}
   .domains span:last-child::after{content:""}
@@ -183,7 +183,7 @@
   .worldmap .pin-lbl{position:absolute;left:13px;top:-5px;font-family:Arial,Helvetica,sans-serif;font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:#5f5640;white-space:nowrap;pointer-events:none}
   .reach .title{max-width:none;white-space:nowrap;font-size:clamp(1.6rem,3.6vw,2.7rem)}
   .reach .reach-sub{max-width:620px;margin:14px auto 0;text-align:center;font-size:1.06rem;line-height:1.65;color:var(--ink-soft)}
-  @media (max-width:600px){.reach .title{white-space:normal}}
+  @media (max-width:600px){.reach .title{white-space:normal}.hero-place{letter-spacing:.12em;font-size:11px}.wrap{padding:0 20px}h1.hero-title{font-size:clamp(2rem,8vw,3rem)}}
   .reach-locs{text-align:center;margin-top:32px;font:var(--label);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-size:12px}
 
   footer{border-top:1px solid var(--rule);padding:46px 0 60px;color:var(--muted)}
