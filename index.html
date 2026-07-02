@@ -38,7 +38,7 @@
     --label:600 12px/1.4 "Inter",system-ui,-apple-system,Segoe UI,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;overflow-x:hidden}
   body{
     background:var(--paper);
     color:var(--ink);
@@ -184,14 +184,17 @@
   .reach .reach-sub{max-width:620px;margin:14px auto 0;text-align:center;font-size:1.06rem;line-height:1.65;color:var(--ink-soft)}
   @media (max-width:600px){
     .reach .title{white-space:normal}
-    .wrap{padding:0 20px}
-    h1.hero-title{font-size:clamp(1.8rem,7vw,2.6rem)}
-    .hero-sub{font-size:1rem}
-    .eyebrow{letter-spacing:.1em;font-size:10px;word-break:break-word}
-    .hero-place{letter-spacing:.1em;font-size:10px;flex-wrap:wrap}
-    .domains{flex-wrap:wrap;gap:6px 10px;font-size:10px;letter-spacing:.1em}
+    .wrap{padding:0 16px}
+    h1.hero-title{font-size:clamp(1.6rem,6.5vw,2.2rem)}
+    .hero-sub{font-size:.95rem;max-width:100%}
+    .eyebrow{letter-spacing:.08em;font-size:9px;word-break:break-word;white-space:normal}
+    .hero-place{letter-spacing:.08em;font-size:9px;flex-wrap:wrap;white-space:normal}
+    .domains{flex-wrap:wrap;gap:4px 8px;font-size:9px;letter-spacing:.08em}
     .domains span{white-space:normal}
-    body{overflow-x:hidden}
+    .hero-emblem .ring-lg{width:160px}
+    .hero{padding:100px 0 50px}
+    header.nav .wrap{padding:0 16px}
+    .nav-inner{height:60px}
   }
   .reach-locs{text-align:center;margin-top:32px;font:var(--label);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-size:12px}
 
